@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   async function reviewCode() {
-    const response = await axios.post(`${process.env.API}/ai`, {
+    const response = await axios.post(`${import.meta.env.VITE_API}/ai/get-review`, {
       code,
     });
     setReview(response.data);
