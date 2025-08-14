@@ -37,7 +37,7 @@ function App() {
           transition={{ duration: 0.7 }}
         >
           <h2 className="text-2xl font-bold text-blue-400 mb-4">💻 Code Editor</h2>
-          <div className="border border-gray-700 rounded-xl overflow-hidden shadow-inner">
+          <div className="border text-gray-200 border-gray-700 rounded-xl overflow-hidden shadow-inner">
             <Editor
               value={code}
               onValueChange={(code) => setCode(code)}
